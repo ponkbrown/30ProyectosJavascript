@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 ctx.strokeStyle = '#BADA55';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
-ctx.lineWidth = 1;
+ctx.lineWidth = 30;
 
 let isDrawing = false;
 let lastX = 0;
@@ -32,14 +32,14 @@ function draw(e){
   if(hue > 360){
     hue = 0;
   }
-  if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1){
-    direction = !direction;
-  }
-  if(direction) {
-    ctx.lineWidth++;
-  } else {
-    ctx.lineWidth--;
-  }
+//  if(ctx.lineWidth >= 100 || ctx.lineWidth <= 1){
+//    direction = !direction;
+//  }
+//  if(direction) {
+//    ctx.lineWidth++;
+//  } else {
+//    ctx.lineWidth--;
+//  }
 
 }
 
